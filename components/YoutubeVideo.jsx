@@ -11,8 +11,7 @@ import YouTube from "react-youtube";
 
 const YoutubeVideo = () => {
   const opts = {
-    height: "300",
-    width: "100%",
+    width: 300,
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -47,19 +46,20 @@ const YoutubeVideo = () => {
           Youtube Videos
         </h1>
 
-        <div className="flex flex-col md:flex-row  justify-center gap-4 md:gap-8 mx-5">
+        <div className="grid grid-cols-1  md:grid-cols-3 gap-6 justify-items-center">
           {youtubeVideoId.map(({ id, youtubeId }) => (
             <div
               key={id}
-              className="cursor-pointer rounded-xl overflow-hidden group shadow-md shadow-gray-600 hover:shadow-gray-400 duration-100 ease-in"
+              className="aspect-h-9 bg-gray-50 px-2 py-4 rounded-2xl shadow-2xl "
             >
-              <YouTube videoId={youtubeId} opts={opts} />;
+              <YouTube videoId={youtubeId} opts={opts} />
+              <h2 className="my-2">hello</h2>
             </div>
           ))}
         </div>
         <div className="flex justify-center text-center pt-8">
           <Link href="/portfolio-list">
-            <div class="group font-bold cursor-pointer text-xl flex justify-center items-center capitalize tracking-wider text-cyan-800 underline hover:text-teal-600">
+            <div className="group font-bold cursor-pointer text-xl flex justify-center items-center capitalize tracking-wider text-cyan-800 underline hover:text-teal-600">
               Watch More
               <span className="duration-150 ease-in group-hover:translate-x-3 px-2">
                 <BsArrowRight size={20} />

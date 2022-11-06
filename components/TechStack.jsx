@@ -71,10 +71,10 @@ const TeckStack = () => {
           {technology.map(({ id, language, image }) => (
             <div
               key={id}
-              class="flex justify-between items-center rounded-xl bg-white p-6 shadow-lg h-3/4 ease-in duration-150 hover:scale-105"
+              className="flex justify-between items-center rounded-xl bg-white p-6 shadow-lg h-3/4 ease-in duration-150 hover:scale-105"
             >
               <Image src={image} height={80} width={60} objectFit="contain" />
-              <h2 class="font-semibold text-cyan-800 uppercase text-xl md:text-2xl">
+              <h2 className="font-semibold text-cyan-800 uppercase text-xl md:text-2xl">
                 {language}
               </h2>
             </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import {
   FaBars,
@@ -13,6 +14,7 @@ import {
 import { SocialIcons } from "./SocialIcons";
 
 const Navbar = () => {
+  const router = useRouter();
   const navlinks = [
     {
       id: 1,
@@ -70,7 +72,11 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {navlinks.map((eachLink) => (
               <Link key={eachLink.id} href={`/#${eachLink.link}`}>
-                <li className="ml-10 text-sm cursor-pointer font-bold uppercase duration-500 ease-out hover:scale-110 hover:underline underline-offset-2 tracking-widest">
+                <li
+                  className={`ml-10 text-sm cursor-pointer font-bold uppercase hover:underline underline-offset-8 duration-500 ease-out hover:scale-110   tracking-widest ${
+                    router.asPath == `/#${eachLink.link}` ? "underline" : ""
+                  }`}
+                >
                   {eachLink.link}
                 </li>
               </Link>
@@ -117,21 +123,8 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="py-10 flex justify-start items-start space-x-5 ">
-              {/* <div className="rounded-full bg-gray-700 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-800">
-                <FaFacebook size={25} />
-              </div>
-              <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-200">
-                <FaGithub size={25} color="black " />
-              </div>
-              <div className="rounded-full bg-gray-700 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-800">
-                <FaLinkedin size={25} />
-              </div>
-              <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-200">
-                <FaInstagram size={25} color="black " />
-              </div> */}
-
-              <SocialIcons size={25} colorBlack="black" colorWhite="white" />
+            <div className=" py-10 flex justify-start items-start flex-wrap gap-3">
+              <SocialIcons size={15} colorBlack="black" colorWhite="white" />
             </div>
           </div>
         </div>

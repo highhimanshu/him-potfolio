@@ -53,9 +53,9 @@ const Portfolio = () => {
                   {title}
                 </p>
                 <div className="grid grid-flow-col auto-cols-max justify-between">
-                  <span class="badge">{techStack[0]}</span>
-                  <span class="badge">{techStack[1]}</span>
-                  <span class="badge">{techStack[2]}</span>
+                  <span className="badge">{techStack[0]}</span>
+                  <span className="badge">{techStack[1]}</span>
+                  <span className="badge">{techStack[2]}</span>
                 </div>
               </div>
             </Link>
@@ -64,7 +64,7 @@ const Portfolio = () => {
 
         <div className="flex justify-center text-center pt-8">
           <Link href="/portfolio-list">
-            <div class="group font-bold cursor-pointer text-xl flex justify-center items-center capitalize tracking-wider text-cyan-800 underline hover:text-teal-600">
+            <div className="group font-bold cursor-pointer text-xl flex justify-center items-center capitalize tracking-wider text-cyan-800 underline hover:text-teal-600">
               See More
               <span className="duration-150 ease-in group-hover:translate-x-3 px-2">
                 <BsArrowRight size={20} />

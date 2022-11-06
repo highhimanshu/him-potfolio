@@ -78,9 +78,9 @@ const PortfolioList = ({ portfoliosData }) => {
                   {title}
                 </p>
                 <div className="grid grid-flow-col auto-cols-max justify-between">
-                  <span class="badge">{techStack[0]}</span>
-                  <span class="badge">{techStack[1]}</span>
-                  <span class="badge">{techStack[2]}</span>
+                  <span className="badge">{techStack[0]}</span>
+                  <span className="badge">{techStack[1]}</span>
+                  <span className="badge">{techStack[2]}</span>
                 </div>
               </div>
             </Link>

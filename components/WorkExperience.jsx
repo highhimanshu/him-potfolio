@@ -8,10 +8,10 @@ const WorkExperience = () => {
           Work Experience
         </h1>
 
-        <ol class="border-l-2 border-cyan-600">
+        <ol className="border-l-2 border-cyan-600">
           <li>
-            <div class="md:flex flex-start">
-              <div class="bg1 w-6 h-6 flex items-center justify-center rounded-full -ml-2.5">
+            <div className="md:flex flex-start">
+              <div className="bg1 w-6 h-6 flex items-center justify-center rounded-full -ml-2.5">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -27,12 +27,12 @@ const WorkExperience = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="block p-6 text-left rounded-lg shadow-lg bg-gray-50 max-w-max ml-6 mb-10">
-                <div class="flex justify-between mb-4">
+              <div className="block p-6 text-left rounded-lg shadow-lg bg-gray-50 max-w-max ml-6 mb-10">
+                <div className="flex justify-between mb-4">
                   <h2>Husqvarna</h2>
                   <span>1/04/3002</span>
                 </div>
-                <p class="text-gray-700 mb-6">
+                <p className="text-gray-700 mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Quisque scelerisque diam non nisi semper, et elementum
                   lorem ornare. Maecenas placerat facilisis mollis. Duis
@@ -42,8 +42,8 @@ const WorkExperience = () => {
             </div>
           </li>
           <li>
-            <div class="md:flex flex-start">
-              <div class="bg1 w-6 h-6 flex items-center justify-center rounded-full -ml-2.5">
+            <div className="md:flex flex-start">
+              <div className="bg1 w-6 h-6 flex items-center justify-center rounded-full -ml-2.5">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -59,12 +59,12 @@ const WorkExperience = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="block p-6 text-left rounded-lg shadow-lg bg-gray-50 max-w-max ml-6 mb-4">
-                <div class="flex justify-between mb-4">
+              <div className="block p-6 text-left rounded-lg shadow-lg bg-gray-50 max-w-max ml-6 mb-4">
+                <div className="flex justify-between mb-4">
                   <h2>Husqvarna</h2>
                   <span>1/04/3002</span>
                 </div>
-                <p class="text-gray-700 mb-6">
+                <p className="text-gray-700 mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Quisque scelerisque diam non nisi semper, et elementum
                   lorem ornare. Maecenas placerat facilisis mollis. Duis
