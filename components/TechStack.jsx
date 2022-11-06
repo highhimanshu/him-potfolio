@@ -10,47 +10,49 @@ import github from "../public/assets/github.png";
 import graphql from "../public/assets/graphql.png";
 import Image from "next/image";
 
+import { myImageList } from "../config/allImages";
+
 const TeckStack = () => {
   const technology = [
     {
       id: 1,
       language: "html",
-      image: html,
+      image: myImageList.html,
     },
     {
       id: 2,
       language: "css",
-      image: css,
+      image: myImageList.css,
     },
     {
       id: 3,
       language: "js",
-      image: js,
+      image: myImageList.js,
     },
     {
       id: 4,
-      language: "react",
-      image: react,
+      language: "jquery",
+      image: myImageList.jquery,
     },
     {
-      id: 4,
+      id: 5,
       language: "react",
-      image: react,
+      image: myImageList.react,
     },
     {
-      id: 4,
-      language: "react",
-      image: react,
+      id: 6,
+      language: "nextjs",
+      image: myImageList.nextjs,
     },
     {
-      id: 4,
-      language: "react",
-      image: react,
+      id: 7,
+      language: "bootstrap",
+      image: myImageList.bootstrap,
     },
     {
-      id: 4,
-      language: "react",
-      image: react,
+      id: 8,
+      language: "tailwind",
+      image: myImageList.tailwind,
     },
   ];
 
@@ -67,11 +69,11 @@ const TeckStack = () => {
           aperiam? Aliquam?
         </p>
 
-        <div className="grid grid-cols-1 mt-8 gap-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+        <div className="grid grid-cols-2 mt-8 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {technology.map(({ id, language, image }) => (
             <div
               key={id}
-              className="flex justify-between items-center rounded-xl bg-white p-6 shadow-lg h-3/4 ease-in duration-150 hover:scale-105"
+              className="flex justify-between gap-y-4 flex-col md:flex-row items-center rounded-xl bg-white p-6 shadow-lg h-3/4 ease-in duration-150 hover:scale-105"
             >
               <Image src={image} height={80} width={60} objectFit="contain" />
               <h2 className="font-semibold text-cyan-800 uppercase text-xl md:text-2xl">
