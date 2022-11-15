@@ -110,9 +110,9 @@ const WorkExperience = () => {
 
                     <ul class="space-y-1 list-inside text-gray-500">
                       {about.map((each, index) => (
-                        <li className="flex items-center" key={index}>
+                        <li className="flex items-start" key={index}>
                           <svg
-                            className="w-4 h-4 mr-1.5 text-gray-400 flex-shrink-0"
+                            className="w-4 h-4 mr-1.5 mt-1 text-gray-400 flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
