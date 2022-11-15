@@ -15,14 +15,14 @@ const Education = () => {
         <div className="container">
           <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 ">
             {/* <!-- left --> */}
-            <div className="flex flex-row-reverse md:contents text-left">
-              <div className="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto w-full shadow-md">
-                <div className="flex justify-between items-center">
+            <div className="flex flex-row-reverse md:contents">
+              <div className="bg-white col-start-1 text-left col-end-5 p-4 rounded-xl my-4 ml-auto w-full shadow-md">
+                <div className="flex justify-between items-center ">
                   <h3 className="font-semibold text-lg mb-1">
                     Bachelor in Technology
                   </h3>
+
                   <Badge year="2014 to 2018" />
-                  {/* <span>2014 to 2018</span> */}
                 </div>
                 <hr className="border-0 bg-gray-200 h-px mb-2" />
 
@@ -32,7 +32,7 @@ const Education = () => {
                 <p>
                   Major -
                   <span className="italic mx-1 font-black">
-                    Electronic and Telecommunication
+                    Electronics and Telecommunication
                   </span>
                 </p>
               </div>
