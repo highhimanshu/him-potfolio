@@ -109,8 +109,8 @@ const WorkExperience = () => {
                     <h3 className="my-2">{companyName}</h3>
 
                     <ul class="space-y-1 list-inside text-gray-500">
-                      {about.map((each) => (
-                        <li className="flex items-center">
+                      {about.map((each, index) => (
+                        <li className="flex items-center" key={index}>
                           <svg
                             className="w-4 h-4 mr-1.5 text-gray-400 flex-shrink-0"
                             fill="currentColor"
