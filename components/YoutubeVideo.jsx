@@ -27,15 +27,15 @@ const YoutubeVideo = () => {
   const youtubeVideoId = [
     {
       id: 1,
-      youtubeId: "liJVSwOiiwg",
+      youtubeId: "gOa5GGw40pk",
     },
     {
       id: 2,
-      youtubeId: "liJVSwOiiwg",
+      youtubeId: "ATiMs3P_HCY",
     },
     {
       id: 3,
-      youtubeId: "liJVSwOiiwg",
+      youtubeId: "HTD08RwxzBM",
     },
   ];
 
@@ -53,18 +53,20 @@ const YoutubeVideo = () => {
               className="aspect-h-9 bg-gray-50 px-2 py-4 rounded-2xl shadow-2xl "
             >
               <YouTube videoId={youtubeId} opts={opts} />
-              <h2 className="my-2">hello</h2>
             </div>
           ))}
         </div>
         <div className="flex justify-center text-center pt-8">
-          <Link href="/portfolio-list">
-            <div className="group font-bold cursor-pointer text-xl flex justify-center items-center capitalize tracking-wider text-cyan-800 underline hover:text-teal-600">
+          <Link href="https://www.youtube.com/channel/UCWZqpQXPCo6AZg7bpm4ZcZg">
+            <a
+              className="group font-bold cursor-pointer text-xl flex justify-center items-center capitalize tracking-wider text-cyan-800 underline hover:text-teal-600"
+              target="_blank"
+            >
               Watch More
               <span className="duration-150 ease-in group-hover:translate-x-3 px-2">
                 <BsArrowRight size={20} />
               </span>
-            </div>
+            </a>
           </Link>
         </div>
       </div>

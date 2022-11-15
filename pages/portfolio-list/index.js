@@ -60,11 +60,15 @@ const PortfolioList = ({ portfoliosData }) => {
   // }
   return (
     <div id="portfolio" className="w-full">
-      <div className="customComponentContainer">
-        <h1 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
-          Portfolio
-        </h1>
-
+      <div className="h-max">
+        <div className="flex bg1 h-96 justify-center items-center py-50 shadow-xl shadow-gray-400 relative">
+          <h1 className="text-4xl text-white">Portfolio List</h1>
+          <span className="absolute left-4 bottom-4 text-white bg-black text-xs sm:text-sm px-5 rounded-xl">
+            /portfolio-list
+          </span>
+        </div>
+      </div>
+      <div className="max-w-[1240px] mx-auto p-2 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-5 gap-8 justify-items-center">
           {portfoliosData.map(({ id, title, imgScr, url, techStack }) => (
             <Link key={id} href={`/portfolio-list/${url}`}>

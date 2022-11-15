@@ -1,13 +1,5 @@
 import React from "react";
-import html from "../public/assets/html.png";
-import css from "../public/assets/css.png";
-import js from "../public/assets/javascript.png";
-import react from "../public/assets/react.png";
-import nextjs from "../public/assets/nextjs.png";
-import tailwind from "../public/assets/tailwind.png";
-import nodejs from "../public/assets/node.png";
-import github from "../public/assets/github.png";
-import graphql from "../public/assets/graphql.png";
+
 import Image from "next/image";
 
 import { myImageList } from "../config/allImages";
@@ -54,20 +46,24 @@ const TeckStack = () => {
       language: "tailwind",
       image: myImageList.tailwind,
     },
+    {
+      id: 9,
+      language: "GIT",
+      image: myImageList.githubDark,
+    },
+    {
+      id: 10,
+      language: "Agile",
+      image: myImageList.agile,
+    },
   ];
 
   return (
     <div id="techstack" className="w-full">
       <div className="customComponentContainer">
         <h2 className="sm:text-5xl text-4xl font-extrabold text-transparent bg-clip-text bg1 ">
-          Teck Stack
+          Tech Stack
         </h2>
-        <p className="py-4 ">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-          dignissimos expedita, odit dicta ipsa eius porro excepturi deserunt et
-          amet praesentium quo, mollitia culpa est nemo voluptate cupiditate
-          aperiam? Aliquam?
-        </p>
 
         <div className="grid grid-cols-2 mt-8 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {technology.map(({ id, language, image }) => (

@@ -49,15 +49,18 @@ const HomePage = () => {
                 />
               </button>
             </Link>
-            <Link href="#">
-              <button className="group bg-white shadow-xl shadow-gray-600 hover:shadow-none hover:bg-black hover:text-white rounded-3xl px-2 py-1.5 sm:px-4 sm:py-3 my-3 ease-in duration-400">
-                Get Resume
-                <IoMdArrowDropright
-                  size={25}
-                  className="inline group-hover:rotate-90 duration-200 ease-in"
-                />
-              </button>
-            </Link>
+            <a
+              type="button"
+              href="/assets/himanshu_resume.pdf"
+              className="group bg-white shadow-xl shadow-gray-600 hover:shadow-none hover:bg-black hover:text-white rounded-3xl px-2 py-1.5 sm:px-4 sm:py-3 my-3 ease-in duration-400"
+              download
+            >
+              Get Resume
+              <IoMdArrowDropright
+                size={25}
+                className="inline group-hover:rotate-90 duration-200 ease-in"
+              />
+            </a>
           </div>
         </div>
       </div>

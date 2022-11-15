@@ -24,12 +24,11 @@ html {
   }
 }
 
-.badge {
-  @apply text-sm text-white hover:text-black  bg-cyan-700 hover:bg-gray-300 text-xs md:text-sm my-4 mx-4 px-2 py-1 rounded-full;
-}
-
 .bg1 {
   @apply bg-gradient-to-br from-cyan-400 to-blue-600;
+}
+.badge {
+  @apply text-sm  hover:text-black  bg-gray-300 shadow-lg hover:bg-cyan-600 text-xs md:text-sm my-4 mx-4 px-2 py-1 rounded-full;
 }
 
 .button1 {

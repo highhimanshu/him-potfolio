@@ -1,14 +1,12 @@
 import React from "react";
 import {
-  FaBars,
-  FaTimes,
   FaFacebook,
   FaGithub,
-  FaLink,
-  FaTwitter,
+  FaYoutube,
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
+import BsYoutube from "react-icons/bs";
 
 export const SocialIcons = ({ size, colorBlack, colorWhite }) => {
   return (
@@ -17,7 +15,7 @@ export const SocialIcons = ({ size, colorBlack, colorWhite }) => {
         <FaFacebook size={size} color={colorBlack} />
       </div>
       <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100">
-        <FaGithub size={size} color={colorBlack} />
+        <FaYoutube size={size} color={colorBlack} />
       </div>
       <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100">
         <FaLinkedin size={size} color={colorBlack} />

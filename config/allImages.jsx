@@ -9,4 +9,7 @@ export const myImageList = {
   tailwind: "/assets/tailwind.png",
   node: "/assets/node.png",
   bootstrap: "/assets/bootstrap.png",
+  github: "/assets/github.png",
+  githubDark: "/assets/githubDark.png",
+  agile: "/assets/agile.png",
 };

@@ -10,6 +10,7 @@ import {
   FaTwitter,
   FaLinkedin,
   FaInstagram,
+  FaYoutube,
 } from "react-icons/fa";
 import { SocialIcons } from "./SocialIcons";
 
@@ -22,19 +23,23 @@ const Navbar = () => {
     },
     {
       id: 2,
-      link: "portfolio",
-    },
-    {
-      id: 3,
       link: "experience",
     },
     {
+      id: 3,
+      link: "portfolio",
+    },
+    {
       id: 4,
-      link: "me",
+      link: "tech",
     },
     {
       id: 5,
-      link: "contact",
+      link: "education",
+    },
+    {
+      id: 6,
+      link: "me",
     },
   ];
 
@@ -63,13 +68,13 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center  w-full max-w-screen h-full mx-auto px-8">
         <Link href="/">
-          <h1 className="text-2xl md:text-2xl lg:text-4xl font-extrabold uppercase tracking-wider cursor-pointer">
+          <h1 className="text-sm md:text-xl lg:text-3xl font-extrabold uppercase tracking-wider cursor-pointer">
             Himanshu Shekhar
           </h1>
         </Link>
 
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex items-center justify-between">
             {navlinks.map((eachLink) => (
               <Link key={eachLink.id} href={`/#${eachLink.link}`}>
                 <li
@@ -81,6 +86,11 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
+            <Link href="https://www.youtube.com/channel/UCWZqpQXPCo6AZg7bpm4ZcZg">
+              <a target="_blank">
+                <FaYoutube size={30} color="#FF0000" className="ml-2 pl-2" />
+              </a>
+            </Link>
           </ul>
 
           <div className="md:hidden" onClick={() => setShowNav(!showNav)}>
