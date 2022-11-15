@@ -71,7 +71,13 @@ const TeckStack = () => {
               key={id}
               className="flex justify-between gap-y-4 flex-col md:flex-row items-center rounded-xl bg-white p-6 shadow-lg h-3/4 ease-in duration-150 hover:scale-105"
             >
-              <Image src={image} height={80} width={60} objectFit="contain" />
+              <Image
+                src={image}
+                height={80}
+                width={60}
+                objectFit="contain"
+                alt="himanshu"
+              />
               <h2 className="font-semibold text-cyan-800 uppercase text-xl md:text-2xl">
                 {language}
               </h2>
