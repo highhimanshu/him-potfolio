@@ -26,20 +26,22 @@ const Me = () => {
             <div className="text-left mx-6 py-6 lg:py-2 ">
               <h2> Himanshu Shekhar</h2>
               <p className="py-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Possimus, libero delectus minus voluptatum magni numquam omnis
-                cumque, ab quasi harum nihil natus ea expedita. Illum ratione
-                voluptas exercitationem laudantium autem?
+                Hi, I am a software engineer with 3.5+ year of experience. I
+                mainly work as a frontend developer(web developer). I have
+                worked on multiple frontend project with multiple organization.I
+                also create content on youtube regarding software engineering
+                and web development.
               </p>
-              <Link href="#">
-                <button className="button1 p-2 px-3 rounded-3xl">
-                  <HiOutlineDownload
-                    className="inline items-center "
-                    size={25}
-                  />
-                  Download CV
-                </button>
-              </Link>
+
+              <a
+                type="button"
+                href="/assets/himanshu_resume.pdf"
+                className="button1 p-2 px-3 rounded-3xl"
+                download
+              >
+                <HiOutlineDownload className="inline items-center " size={25} />
+                Download CV
+              </a>
             </div>
           </div>
         </div>

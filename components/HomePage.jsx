@@ -40,7 +40,7 @@ const HomePage = () => {
             />
           </p>
           <div className="flex justify-center gap-4">
-            <Link href="#">
+            <Link href="#contact">
               <button className="group button1 rounded-3xl px-2 py-1.5 sm:px-4 sm:py-3 my-3">
                 Hire Me
                 <IoMdArrowDropright

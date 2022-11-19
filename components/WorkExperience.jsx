@@ -66,7 +66,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className="w-full" id="work-experience">
+    <div className="w-full" id="experience">
       <div className="customComponentContainer">
         <h1 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
           Work Experience
@@ -108,7 +108,7 @@ const WorkExperience = () => {
 
                     <h3 className="my-2">{companyName}</h3>
 
-                    <ul class="space-y-1 list-inside text-gray-500">
+                    <ul className="space-y-1 list-inside text-gray-500">
                       {about.map((each, index) => (
                         <li className="flex items-start" key={index}>
                           <svg
@@ -120,7 +120,7 @@ const WorkExperience = () => {
                             <path
                               fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             ></path>
                           </svg>
                           {each.a1}

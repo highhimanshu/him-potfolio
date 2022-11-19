@@ -8,22 +8,9 @@ import p3 from "../public/assets/p3.jpg";
 import p4 from "../public/assets/p4.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import YouTube from "react-youtube";
+// import Style from "..common.modules.css";
 
 const YoutubeVideo = () => {
-  const opts = {
-    width: 300,
-
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
-    },
-  };
-
-  function _onReady(event) {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  }
-
   const youtubeVideoId = [
     {
       id: 1,
@@ -46,15 +33,21 @@ const YoutubeVideo = () => {
           Youtube Videos
         </h1>
 
-        <div className="grid grid-cols-1  md:grid-cols-3 gap-6 justify-items-center">
-          {youtubeVideoId.map(({ id, youtubeId }) => (
-            <div
-              key={id}
-              className="aspect-h-9 bg-gray-50 px-2 py-4 rounded-2xl shadow-2xl "
-            >
-              <YouTube videoId={youtubeId} opts={opts} />
-            </div>
-          ))}
+        <div className="wrapper">
+          <div className="flex sm:flex-row md:flex-column justify-evenly gap-1 items-center flex-wrap mx-auto">
+            {youtubeVideoId.map(({ id, youtubeId }) => (
+              <div className="video-container" key={id}>
+                <iframe
+                  width="320"
+                  height="215"
+                  src={`https://www.youtube.com/embed/${youtubeId}`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="flex justify-center text-center pt-8">
           <Link href="https://www.youtube.com/channel/UCWZqpQXPCo6AZg7bpm4ZcZg">

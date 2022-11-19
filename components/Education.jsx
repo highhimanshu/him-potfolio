@@ -16,7 +16,7 @@ const Education = () => {
           <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 ">
             {/* <!-- left --> */}
             <div className="flex flex-row-reverse md:contents">
-              <div className="bg-white col-start-1 text-left col-end-5 p-4 rounded-xl my-4 ml-auto w-full shadow-md">
+              <div className="bg-white col-start-1 text-left col-end-5 p-4 rounded-xl my-4 ml-[15px] sm:ml-[30px] w-full shadow-md">
                 <div className="flex justify-between items-center ">
                   <h3 className="font-semibold text-lg mb-1">
                     Bachelor in Technology

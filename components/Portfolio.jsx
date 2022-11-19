@@ -2,37 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import p1 from "../public/assets/p1.jpg";
-import p2 from "../public/assets/p2.png";
-import p3 from "../public/assets/p3.jpg";
-import p4 from "../public/assets/p4.jpg";
 import { BsArrowRight } from "react-icons/bs";
+import { myPortfolioData } from "../config/portfolioData";
 
 const Portfolio = () => {
-  const portfolios = [
-    {
-      id: 1,
-      title: "portfolio 1",
-      imgScr: p4,
-      url: "react-portfolio1",
-      techStack: ["html", "css", "js"],
-    },
-    {
-      id: 2,
-      title: "portfolio 2",
-      imgScr: p1,
-      url: "react-portfolio2",
-      techStack: ["tailwind", "react", "jquery"],
-    },
-    {
-      id: 3,
-      title: "portfolio 3",
-      imgScr: p2,
-      url: "react-portfolio3",
-      techStack: ["html", "css", "js"],
-    },
-  ];
-
   return (
     <div id="portfolio" className="w-full">
       <div className="customComponentContainer">
@@ -40,22 +13,37 @@ const Portfolio = () => {
           Portfolio
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-5 gap-8 justify-items-center">
-          {portfolios.map(({ id, title, imgScr, url, techStack }) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-5 gap-6 justify-items-center ">
+          {myPortfolioData.map(({ id, title, imgScr, url, techStack }) => (
             <Link key={id} href={`/portfolio-list/${url}`}>
-              <div className="cursor-pointer rounded overflow-hidden mx-3 group shadow-md shadow-gray-600 hover:shadow-gray-400 duration-100 ease-in">
+              <div className="cursor-pointer rounded-xl bg-white overflow-hidden mx-3 group shadow-md shadow-gray-600 hover:shadow-gray-400 duration-100 ease-in">
                 <Image
                   src={imgScr}
                   alt={title}
+                  width="450px"
+                  height="300px"
+                  // layout="responsive"
                   className="hover:scale-105 duration-300 ease-in rounded"
                 />
                 <p className="text-cyan-800 capitalize font-bold font-base text-md py-3 ">
                   {title}
                 </p>
-                <div className="grid grid-flow-col auto-cols-max justify-between">
-                  <span className="badge">{techStack[0]}</span>
-                  <span className="badge">{techStack[1]}</span>
-                  <span className="badge">{techStack[2]}</span>
+                <div className="flex m-2 justify-start gap-4 items-center">
+                  {techStack.map(({ index, techImg, techName }) => (
+                    <div
+                      key={index}
+                      className="rounded-md bg1 px-2 pt-2 shadow-lg shadow-gray-400 h-fit w-fit ease-in duration-150 hover:scale-105"
+                    >
+                      <Image
+                        src={techImg}
+                        height={20}
+                        width={20}
+                        objectFit="contain"
+                        alt="himanshu"
+                        title={techName}
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </Link>

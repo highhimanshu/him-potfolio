@@ -78,7 +78,7 @@ const Navbar = () => {
             {navlinks.map((eachLink) => (
               <Link key={eachLink.id} href={`/#${eachLink.link}`}>
                 <li
-                  className={`ml-10 text-sm cursor-pointer font-bold uppercase hover:underline underline-offset-8 duration-500 ease-out hover:scale-110   tracking-widest ${
+                  className={`ml-10 text-sm cursor-pointer font-bold uppercase hover:underline underline-offset-8 duration-500 ease-out hover:scale-110 tracking-widest ${
                     router.asPath == `/#${eachLink.link}` ? "underline" : ""
                   }`}
                 >

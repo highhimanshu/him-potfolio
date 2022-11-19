@@ -2,50 +2,43 @@ import Image from "next/image";
 import Link from "next/link";
 
 import p1 from "../../public/assets/p1.jpg";
+import { myImageList, portfolioImages } from "../../config/allImages";
 
 export async function getStaticProps(context) {
   const portfoliosData = [
     {
       id: 1,
-      title: "portfolio 1",
-      imgScr: p1,
-      url: "react-portfolio1",
-      techStack: ["html", "css", "js"],
+      title: "askamu - create online store",
+      imgScr: portfolioImages.askamuSnapshot,
+      url: "askamu",
+      techStack: [
+        { techImg: myImageList.html, techName: "html" },
+        { techImg: myImageList.css, techName: "css" },
+        { techImg: myImageList.js, techName: "java script" },
+      ],
     },
     {
       id: 2,
-      title: "portfolio 2",
-      imgScr: p1,
-      url: "react-portfolio2",
-      techStack: ["tailwind", "react", "jquery"],
+      title: "What About Coding",
+      imgScr: portfolioImages.wacSnapshot,
+      url: "wac",
+      techStack: [
+        { techImg: myImageList.html, techName: "html" },
+        { techImg: myImageList.css, techName: "css" },
+        { techImg: myImageList.js, techName: "java script" },
+      ],
     },
     {
       id: 3,
-      title: "portfolio 3",
-      imgScr: p1,
-      url: "react-portfolio3",
-      techStack: ["html", "css", "js"],
-    },
-    {
-      id: 4,
-      title: "portfolio 4",
-      imgScr: p1,
-      url: "react-portfolio4",
-      techStack: ["html", "css", "js"],
-    },
-    {
-      id: 5,
-      title: "portfolio 5",
-      imgScr: p1,
-      url: "react-portfolio5",
-      techStack: ["html", "css", "js"],
-    },
-    {
-      id: 6,
-      title: "portfolio 6",
-      imgScr: p1,
-      url: "react-portfolio6",
-      techStack: ["html", "css", "js"],
+      title: "The Beta World",
+      imgScr: portfolioImages.betaWorldSnapshot,
+      url: "the_beta_world",
+      techStack: [
+        { techImg: myImageList.html, techName: "html" },
+        { techImg: myImageList.css, techName: "css" },
+        { techImg: myImageList.js, techName: "java script" },
+        { techImg: myImageList.react, techName: "react" },
+      ],
     },
   ];
 
@@ -76,16 +69,18 @@ const PortfolioList = ({ portfoliosData }) => {
                 <Image
                   src={imgScr}
                   alt={title}
+                  width="450px"
+                  height="300px"
                   className="hover:scale-105 duration-300 ease-in rounded"
                 />
                 <p className="text-cyan-800 capitalize font-bold font-base text-md py-3 ">
                   {title}
                 </p>
-                <div className="grid grid-flow-col auto-cols-max justify-between">
+                {/* <div className="grid grid-flow-col auto-cols-max justify-between">
                   <span className="badge">{techStack[0]}</span>
                   <span className="badge">{techStack[1]}</span>
                   <span className="badge">{techStack[2]}</span>
-                </div>
+                </div> */}
               </div>
             </Link>
           ))}

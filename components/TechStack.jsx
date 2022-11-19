@@ -59,7 +59,7 @@ const TeckStack = () => {
   ];
 
   return (
-    <div id="techstack" className="w-full">
+    <div id="tech" className="w-full">
       <div className="customComponentContainer">
         <h2 className="sm:text-5xl text-4xl font-extrabold text-transparent bg-clip-text bg1 ">
           Tech Stack
