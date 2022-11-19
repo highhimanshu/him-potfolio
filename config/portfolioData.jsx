@@ -24,7 +24,7 @@ export const myPortfolioData = [
     title: "What About Coding",
     imgScr: portfolioImages.wacSnapshot,
     description:
-      "What About Coding is an intiatite by Himanshu Shekhar where I bascially teach frontend web development throuch code and throught youtbe video. The websirte is made by Wordpress, Elementor and also optimized for SEO using Google Search Console , Google Analytics and Mailerite Email Marketing tool",
+      "What About Coding is an intiative by Himanshu Shekhar where I bascially teach frontend web development throuch code and throught youtbe video. The websirte is made by Wordpress, Elementor and also optimized for SEO using Google Search Console , Google Analytics and Mailerite Email Marketing tool",
     url: "wac",
     techStack: [
       { techImg: myImageList.wordpress, techName: "wordpress" },
@@ -40,7 +40,7 @@ export const myPortfolioData = [
     title: "The Beta World",
     imgScr: portfolioImages.betaWorldSnapshot,
     description:
-      "The Beta World is an web3 project where property are deralth with bitcoin (Etherium to be precise). The technology used here are Next JS, Ether JS, and React Bootstrap from the frontend side. ABI and Contract form are secured and given by client.Connection wiht metamsk wallet and graph and chart display of the analytics are some challenging features applied in the project",
+      "The Beta World is an web3 project where property are dealt with bitcoin (Etherium to be precise). The technology used here are Next JS, Ether JS, and React Bootstrap from the frontend side. ABI and Contract Form are secured and given by client. Connection with metamask wallet along with graph and chart display were some of the challenging features applied in the project",
     url: "the_beta_world",
     techStack: [
       { techImg: myImageList.nextjs, techName: "next" },

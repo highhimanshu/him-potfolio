@@ -68,9 +68,10 @@ const WorkExperience = () => {
   return (
     <div className="w-full" id="experience">
       <div className="customComponentContainer">
-        <h1 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
+        <h2 className="text-transparent bg-clip-text bg1 py-3 ">
           Work Experience
-        </h1>
+          <div className="h-1 w-20 bg1 mx-auto rounded my-3"></div>
+        </h2>
 
         <ol className="border-l-2 border-cyan-600">
           {experienceDetails.map(
@@ -102,11 +103,11 @@ const WorkExperience = () => {
                   </div>
                   <div className="block p-6 text-left rounded-lg shadow-lg bg-gray-50 w-full text-gray-600 ml-6 mb-10">
                     <div className="flex justify-between mb-2">
-                      <h2>{companyProject}</h2>
+                      <h4>{companyProject}</h4>
                       <span>{period}</span>
                     </div>
 
-                    <h3 className="my-2">{companyName}</h3>
+                    <h5 className="my-2">{companyName}</h5>
 
                     <ul className="space-y-1 list-inside text-gray-500">
                       {about.map((each, index) => (
@@ -129,7 +130,7 @@ const WorkExperience = () => {
                     </ul>
                     <p className="mt-3 p-1 text-gray-700 sm:text-md capitalize text-sm shadow-md bg-gray-100 shadow-gray-300 max-w-max rounded-lg">
                       Technology Used :
-                      <span className="mx-2 text-gray-500">
+                      <span className="mx-2 font-semibold tracking-wide">
                         {technologyUsed.t1 ? `${technologyUsed.t1}` : ""}
                         {technologyUsed.t2 ? `${", " + technologyUsed.t2}` : ""}
                         {technologyUsed.t3 ? `${", " + technologyUsed.t3}` : ""}

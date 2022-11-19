@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="w-full">
       <div className="customComponentContainer">
-        <h1 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
+        <h1 className="sm:text-5xl text-3xl text-transparent bg-clip-text bg1 py-6 ">
           Portfolio
         </h1>
 
@@ -28,7 +28,7 @@ const Portfolio = () => {
                 <p className="text-cyan-800 capitalize font-bold font-base text-md py-3 ">
                   {title}
                 </p>
-                <div className="flex m-2 justify-start gap-4 items-center">
+                <div className="flex m-2 justify-center gap-4 items-center">
                   {techStack.map(({ index, techImg, techName }) => (
                     <div
                       key={index}

@@ -7,8 +7,9 @@ const Education = () => {
   return (
     <div id="education" className="w-full">
       <div className="customComponentContainer">
-        <h2 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
+        <h2 className="text-transparent bg-clip-text bg1 py-3 ">
           Education
+          <div class="h-1 w-20 bg1 mx-auto rounded my-3"></div>
         </h2>
 
         {/* <!-- component --> */}
@@ -16,23 +17,24 @@ const Education = () => {
           <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 ">
             {/* <!-- left --> */}
             <div className="flex flex-row-reverse md:contents">
-              <div className="bg-white col-start-1 text-left col-end-5 p-4 rounded-xl my-4 ml-[15px] sm:ml-[30px] w-full shadow-md">
+              <div className="bg-white col-start-1 text-left col-end-5 p-4 rounded-xl my-4 ml-auto w-full shadow-md">
                 <div className="flex justify-between items-center ">
-                  <h3 className="font-semibold text-lg mb-1">
-                    Bachelor in Technology
+                  <h3 className="hidden sm:block font-semibold text-lg mb-1">
+                    Bachelore in Technology
+                  </h3>
+                  <h3 className="sm:hidden font-semibold text-lg mb-1">
+                    B.Tech
                   </h3>
 
-                  <Badge year="2014 to 2018" />
+                  <Badge year="till 2011" />
                 </div>
                 <hr className="border-0 bg-gray-200 h-px mb-2" />
 
-                <p className="leading-tight text-justify">
-                  KIIT University, Bhubaneswar
-                </p>
+                <p className="leading-tight text-justify">KIIT University</p>
                 <p>
                   Major -
                   <span className="italic mx-1 font-black">
-                    Electronics and Telecommunication
+                    Electronics and Tele-communication
                   </span>
                 </p>
               </div>

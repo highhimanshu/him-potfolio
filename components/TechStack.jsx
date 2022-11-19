@@ -61,8 +61,9 @@ const TeckStack = () => {
   return (
     <div id="tech" className="w-full">
       <div className="customComponentContainer">
-        <h2 className="sm:text-5xl text-4xl font-extrabold text-transparent bg-clip-text bg1 ">
+        <h2 className="text-transparent bg-clip-text bg1 py-3 ">
           Tech Stack
+          <div class="h-1 w-20 bg1 mx-auto rounded my-3"></div>
         </h2>
 
         <div className="grid grid-cols-2 mt-8 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">

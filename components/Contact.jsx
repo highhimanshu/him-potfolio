@@ -7,9 +7,10 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full">
       <div className="customComponentContainer">
-        <h1 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
+        <h2 className="text-transparent bg-clip-text bg1 py-3 ">
           Contact
-        </h1>
+          <div class="h-1 w-20 bg1 mx-auto rounded my-3"></div>
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-8 text-left">
           <div className="col-span-1 rounded-xl p-6 bg1 hidden md:block text-white">

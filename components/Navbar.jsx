@@ -68,9 +68,9 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center  w-full max-w-screen h-full mx-auto px-8">
         <Link href="/">
-          <h1 className="text-sm md:text-xl lg:text-3xl font-extrabold uppercase tracking-wider cursor-pointer">
+          <h2 className=" uppercase tracking-wider cursor-pointer">
             Himanshu Shekhar
-          </h1>
+          </h2>
         </Link>
 
         <div>
@@ -78,7 +78,7 @@ const Navbar = () => {
             {navlinks.map((eachLink) => (
               <Link key={eachLink.id} href={`/#${eachLink.link}`}>
                 <li
-                  className={`ml-10 text-sm cursor-pointer font-bold uppercase hover:underline underline-offset-8 duration-500 ease-out hover:scale-110 tracking-widest ${
+                  className={`ml-10 text-sm cursor-pointer  uppercase hover:underline underline-offset-8 duration-500 ease-out hover:scale-110 tracking-widest ${
                     router.asPath == `/#${eachLink.link}` ? "underline" : ""
                   }`}
                 >

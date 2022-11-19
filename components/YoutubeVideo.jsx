@@ -29,9 +29,10 @@ const YoutubeVideo = () => {
   return (
     <div id="portfolio" className="w-full">
       <div className="customComponentContainer">
-        <h1 className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg1 py-6 ">
-          Youtube Videos
-        </h1>
+        <h2 className="text-transparent bg-clip-text bg1 py-3 ">
+          Youtube
+          <div class="h-1 w-20 bg1 mx-auto rounded my-3"></div>
+        </h2>
 
         <div className="wrapper">
           <div className="flex sm:flex-row md:flex-column justify-evenly gap-1 items-center flex-wrap mx-auto">
