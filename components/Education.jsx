@@ -9,7 +9,7 @@ const Education = () => {
       <div className="customComponentContainer">
         <h2 className="text-transparent bg-clip-text bg1 py-3 ">
           Education
-          <div class="h-1 w-20 bg1 mx-auto rounded my-3"></div>
+          <div className="h-1 w-20 bg1 mx-auto rounded my-3"></div>
         </h2>
 
         {/* <!-- component --> */}

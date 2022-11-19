@@ -5,7 +5,14 @@ import him from "../public/assets/him.png";
 import { IoMdArrowDropdown, IoMdArrowDropright } from "react-icons/io";
 import { SocialIcons } from "./SocialIcons";
 import { Typewriter } from "react-simple-typewriter";
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube,
+  FaGlobeAsia,
+} from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -17,10 +24,34 @@ const HomePage = () => {
 
         <div className="sm:space-y-4 ">
           <div className="flex justify-center gap-2 text-white my-2 ">
-            <FaGithub className="hover:text-black hover:scale-125 ease-in duration-150" />
-            <FaInstagram className="hover:text-black hover:scale-125 ease-in duration-150" />
-            <FaLinkedin className="hover:text-black hover:scale-125 ease-in duration-150" />
-            <FaTwitter className="hover:text-black hover:scale-125 ease-in duration-150" />
+            <a
+              href="https://www.youtube.com/channel/UCWZqpQXPCo6AZg7bpm4ZcZg/videos"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaYoutube className="hover:text-black hover:scale-125 ease-in duration-150" />
+            </a>
+            <a
+              href="https://www.instagram.com/himanshu.create/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram className="hover:text-black hover:scale-125 ease-in duration-150" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/himanshushekhar020/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="hover:text-black hover:scale-125 ease-in duration-150" />
+            </a>
+            <a
+              href="https://www.whataboutcoding.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGlobeAsia className="hover:text-black hover:scale-125 ease-in duration-150" />
+            </a>
           </div>
           <h1 className="font-bold capitalize text-2xl text-gray-100 sm:text-5xl tracking-wider">
             <span className="text-black">himanshu</span> shekhar

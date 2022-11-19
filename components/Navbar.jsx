@@ -68,9 +68,9 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center  w-full max-w-screen h-full mx-auto px-8">
         <Link href="/">
-          <h2 className=" uppercase tracking-wider cursor-pointer">
+          <h3 className="uppercase tracking-wider cursor-pointer">
             Himanshu Shekhar
-          </h2>
+          </h3>
         </Link>
 
         <div>

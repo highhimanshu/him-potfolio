@@ -11,18 +11,30 @@ import BsYoutube from "react-icons/bs";
 export const SocialIcons = ({ size, colorBlack, colorWhite }) => {
   return (
     <>
-      <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100">
-        <FaFacebook size={size} color={colorBlack} />
-      </div>
-      <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100">
+      <a
+        href="https://www.youtube.com/channel/UCWZqpQXPCo6AZg7bpm4ZcZg/videos"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100"
+      >
         <FaYoutube size={size} color={colorBlack} />
-      </div>
-      <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100">
+      </a>
+      <a
+        href="https://www.linkedin.com/in/himanshushekhar020/"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100"
+      >
         <FaLinkedin size={size} color={colorBlack} />
-      </div>
-      <div className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100">
+      </a>
+      <a
+        href="https://www.instagram.com/himanshu.create/"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full bg-gray-300 shadow-lg  shadow-gray-500 p-3 hover:bg-gray-100"
+      >
         <FaInstagram size={size} color={colorBlack} />
-      </div>
+      </a>
     </>
   );
 };

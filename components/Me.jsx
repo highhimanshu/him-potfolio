@@ -15,7 +15,7 @@ const Me = () => {
 
         <div className="container shadow-xl bg-white rounded-xl p-8 my-8">
           <div className="flex justify-end flex-col md:flex-row items-center ">
-            <div className="px-5 ">
+            <div className="md:px-5 ">
               <Image
                 src={himanshu}
                 alt="me"
@@ -24,7 +24,7 @@ const Me = () => {
               />
             </div>
 
-            <div className="text-left mx-6 py-6 lg:py-2 ">
+            <div className="text-left  py-6 lg:py-2 ">
               <h3> Himanshu Shekhar</h3>
               <p className="py-2">
                 Hi, I am a software engineer with 3.5+ year of experience. I

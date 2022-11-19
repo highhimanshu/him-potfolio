@@ -107,7 +107,7 @@ const WorkExperience = () => {
                       <span>{period}</span>
                     </div>
 
-                    <h5 className="my-2">{companyName}</h5>
+                    <p className="my-2">{companyName}</p>
 
                     <ul className="space-y-1 list-inside text-gray-500">
                       {about.map((each, index) => (
