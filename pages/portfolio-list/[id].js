@@ -52,7 +52,7 @@ const SinglePortfolio = ({ portfolio }) => {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-10">
         <div className="col-span-4">
           <p>Project</p>
-          <h2>Overview</h2>
+          <h3 className="my-2">Overview</h3>
           <p>{portfolio.description}</p>
           {portfolio.gitHubLink && (
             <a href={portfolio.gitHubLink} target="_blank" rel="noreferrer">
