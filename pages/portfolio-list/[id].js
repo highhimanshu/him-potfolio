@@ -55,14 +55,14 @@ const SinglePortfolio = ({ portfolio }) => {
           <h2>Overview</h2>
           <p>{portfolio.description}</p>
           {portfolio.gitHubLink && (
-            <a href={portfolio.gitHubLink} target="_blank">
+            <a href={portfolio.gitHubLink} target="_blank" rel="noreferrer">
               <button className=" button1 px-8 py-2 mt-4 mr-8 rounded-3xl">
                 Code
               </button>
             </a>
           )}
           {portfolio.websiteLink && (
-            <a href={portfolio.websiteLink} target="_blank">
+            <a href={portfolio.websiteLink} target="_blank" rel="noreferrer">
               <button className="button1 px-8 py-2 mt-4 rounded-3xl">
                 Demo
               </button>
