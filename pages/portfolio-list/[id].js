@@ -15,8 +15,6 @@ export async function getStaticPaths() {
     };
   });
 
-  console.log("paths", paths);
-
   return {
     paths,
     fallback: false,
@@ -24,8 +22,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  console.log("context ", context);
-
   const portfolio = getSinglePortfolioData(context.params.id);
 
   console.log("return port data", portfolio);
@@ -42,7 +38,7 @@ const SinglePortfolio = ({ portfolio }) => {
     <div className="w-full">
       <div className="h-max">
         <div className="flex bg1 h-96 justify-center items-center py-50 shadow-xl shadow-gray-400 relative">
-          <h1 className="text-4xl text-white">{portfolio.title}</h1>
+          <h2 className=" text-white text-center">{portfolio.title}</h2>
           <span className="absolute left-4 bottom-4 text-white bg-black text-xs sm:text-sm px-5 rounded-xl">
             /portfolio-list/{portfolio.url}
           </span>

@@ -26,7 +26,7 @@ const Education = () => {
                     B.Tech
                   </h3>
 
-                  <Badge year="till 2011" />
+                  <Badge year="2014 to 2018" />
                 </div>
                 <hr className="border-0 bg-gray-200 h-px mb-2" />
 

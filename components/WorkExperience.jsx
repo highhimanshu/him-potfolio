@@ -68,10 +68,10 @@ const WorkExperience = () => {
   return (
     <div className="w-full" id="experience">
       <div className="customComponentContainer">
-        <h3 className="text-transparent bg-clip-text bg1 py-3 ">
+        <h2 className="text-transparent bg-clip-text bg1 py-3 ">
           Work Experience
           <div className="h-1 w-20 bg1 mx-auto rounded my-3"></div>
-        </h3>
+        </h2>
 
         <ol className="border-l-2 border-cyan-600">
           {experienceDetails.map(

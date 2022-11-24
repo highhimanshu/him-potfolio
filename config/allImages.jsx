@@ -25,4 +25,5 @@ export const portfolioImages = {
   askamuSnapshot: "/assets/askamu_screenshot.png",
   wacSnapshot: "/assets/whataboutcoding_snapshot.png",
   betaWorldSnapshot: "/assets/betaworld_snapshot.png",
+  himPortfolioSnapshot: "/assets/him_portfolio_snapshot.png",
 };
