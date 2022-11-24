@@ -13,8 +13,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Himanshu Shekhar</title>
-        <meta name="description" content="Himanshu Shekhar portfolio website" />
+        <title>Himanshu Shekhar Portfolio</title>
+        <meta
+          name="description"
+          content="This website will help you in knowing all my professional details at a single place.Thanks for visiting."
+        />
       </Head>
       <HomePage />
       <WorkExperience />
