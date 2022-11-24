@@ -3,7 +3,7 @@ import { myImageList, portfolioImages } from "./allImages";
 export const myPortfolioData = [
   {
     id: 1,
-    title: "My Portfolio>",
+    title: "My Portfolio",
     snap: portfolioImages.himPortfolioSnapshot,
     description:
       "A Personal portfolio website made with next js, react js , tailwind css and java script",
