@@ -3,12 +3,16 @@ import Card from "../../components/Card";
 import { myPortfolioData } from "../../config/portfolioData";
 
 export async function getStaticProps(context) {
+  const res = myPortfolioData;
+  console.log(res);
+
   return {
-    props: { myPortfolioData },
+    props: { res },
   };
 }
 
-const PortfolioList = ({ myPortfolioData }) => {
+const PortfolioList = ({ res }) => {
+  console.log(res);
   // if (router.isFallback) {
   //   return <div>Loading...</div>;
   // }
@@ -24,9 +28,9 @@ const PortfolioList = ({ myPortfolioData }) => {
       </div>
       <div className="max-w-[1240px] mx-auto p-2 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-5 gap-8 justify-items-center">
-          {myPortfolioData.map(
-            ({ id, title, snap, description, url, techStack }) => (
-              <Link key={id} href={`/portfolio-list/${url}`}>
+          {res.map(({ id, title, snap, description, url, techStack }) => (
+            <Link key={id} href={`/portfolio-list/${url}`}>
+              <div>
                 <Card
                   id={id}
                   title={title}
@@ -35,9 +39,9 @@ const PortfolioList = ({ myPortfolioData }) => {
                   techStack={techStack}
                   description={description}
                 />
-              </Link>
-            )
-          )}
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
